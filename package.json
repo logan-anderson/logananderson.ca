@@ -1,0 +1,22 @@
+{
+  "name": "logananderson.ca",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logan-anderson/logananderson.ca.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logan-anderson/logananderson.ca/issues"
+  },
+  "homepage": "https://github.com/logan-anderson/logananderson.ca#readme",
+  "dependencies": {
+    "animejs": "^3.0.1"
+  }
+}
