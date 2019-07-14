@@ -2,6 +2,49 @@ footer {
     background-color: #343a40;
     opacity: .85;
 }
+
 .navbar {
     /* opacity: .85; */
+}
+
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red
+}
+
+.blue {
+    background-color: blue
+}
+
+.green {
+    background-color: green
+}
+
+.yellow {
+    background-color: yellow
+}
+
+#lineDrawing {
+    height: 500px;
+}
+
+.my-path {
+    fill: none;
+    stroke: #cfc33a;
+    stroke-width: 4;
+}
+.test-path {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+}
+#test {
+    background-color: #343a40
 }
