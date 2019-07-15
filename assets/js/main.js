@@ -10,7 +10,7 @@ let scroll_test = anime({
 });
 setInterval(() => {
   scroll_test.seek(window.scrollY);
-}, 50)
+}, 25)
 
 
 let scroll_top = anime({
