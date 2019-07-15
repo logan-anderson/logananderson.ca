@@ -3,10 +3,6 @@ footer {
     opacity: .85;
 }
 
-.navbar {
-    /* opacity: .85; */
-}
-
 .box {
     position: relative;
     width: 100px;
@@ -49,4 +45,19 @@ footer {
 
 #test {
     background-color: #343a40
+}
+
+span {
+    padding: 0px;
+    margin: 0px;
+}
+
+.logan-titile {
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+    opacity: 1;
+}
+.hidden {
+    opacity: 0;
 }
