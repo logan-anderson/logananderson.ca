@@ -1,8 +1,6 @@
 let the_body = document.querySelector('body');
 let logan_brand = $('.logan-title');
 console.log(logan_brand);
-// logan_brand.hide()
-
 
 
 let scroll_test = anime({
@@ -38,20 +36,8 @@ setInterval(() => {
 
 
 
-// var lineDrawing = anime({
-//   targets: '#lineDrawing .lines path',
-//   strokeDashoffset: [anime.setDashoffset, 0],
-//   easing: 'easeInOutSine',
-//   duration: 3000,
-//   delay: function (el, i) {
-//     return i * 250
-//   },
-//   direction: 'alternate',
-//   loop: true
-// });
-
 let logan_anime = anime({
-  targets: '#test .test-lines .test-path',
+  targets: '#svg-id .logan-lines .logan-path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3000,

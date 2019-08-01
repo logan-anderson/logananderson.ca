@@ -37,13 +37,13 @@ footer {
     stroke-width: 4;
 }
 
-.test-path {
+.logan-path {
     fill: none;
     stroke: white;
     stroke-width: 1;
 }
 
-#test {
+#svg-id {
     background-color: #343a40
 }
 
