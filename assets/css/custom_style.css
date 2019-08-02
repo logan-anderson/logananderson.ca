@@ -11,22 +11,6 @@ footer {
     display: inline-block;
 }
 
-.red {
-    background-color: red
-}
-
-.blue {
-    background-color: blue
-}
-
-.green {
-    background-color: green
-}
-
-.yellow {
-    background-color: yellow
-}
-
 #lineDrawing {
     height: 500px;
 }
@@ -37,15 +21,37 @@ footer {
     stroke-width: 4;
 }
 
-.logan-path {
+/* .logan-path {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+} */
+.logan-anderson-path {
     fill: none;
     stroke: white;
     stroke-width: 1;
 }
+/* #logan-anderson-svg {
+    height: 500px;
+    width: 1000px;
+} */
+#logan-svg-id {
+    background-color: #343a40;
+    height: 95vh;
+    width: 99.9;
 
-#svg-id {
-    background-color: #343a40
 }
+/* #logan-anderson-id {
+    height: 90vh;
+    width: 99.9;
+} */
+
+/* #svg-id {
+    background-color: #343a40;
+    height: 90vh;
+    width: 99.9;
+
+} */
 
 span {
     padding: 0px;

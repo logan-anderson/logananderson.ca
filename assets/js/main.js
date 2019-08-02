@@ -11,10 +11,8 @@ let scroll_test = anime({
   autoplay: false
 });
 
-
-
 let scroll_top = anime({
-  targets: '#logan-svg',
+  targets: '#logan-anderson-svg',
   duration: 2000,
   translateY: 150,
   autoplay: false,
@@ -26,7 +24,6 @@ let scroll_top = anime({
 });
 setInterval(() => {
   scroll_top.seek(window.scrollY);
-  console.log(window.scrollY)
   if(window.scrollY < 360) {
     logan_brand.addClass('hidden')
   } else {
@@ -38,6 +35,17 @@ setInterval(() => {
 
 let logan_anime = anime({
   targets: '#svg-id .logan-lines .logan-path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 3000,
+  delay: function (el, i) {
+    return i * 250
+  },
+  direction: 'alternate',
+  loop: true
+});
+let logan_anderson_anime = anime({
+  targets: '#logan-svg-id .logan-anderson-lines .logan-anderson-path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3000,
