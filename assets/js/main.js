@@ -1,6 +1,6 @@
 let the_body = document.querySelector('body');
 let logan_brand = $('.logan-title');
-console.log(logan_brand);
+
 
 
 let scroll_test = anime({
@@ -24,7 +24,8 @@ let scroll_top = anime({
 });
 setInterval(() => {
   scroll_top.seek(window.scrollY);
-  if(window.scrollY < 360) {
+  console.log(window.scrollY)
+  if(window.scrollY < 990) {
     logan_brand.addClass('hidden')
   } else {
     logan_brand.removeClass('hidden')

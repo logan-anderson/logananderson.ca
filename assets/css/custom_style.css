@@ -1,14 +1,9 @@
+body {
+    /* background-color: #343a40; */
+}
 footer {
     background-color: #343a40;
     opacity: .85;
-}
-
-.box {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 4px;
-    display: inline-block;
 }
 
 #lineDrawing {
@@ -20,31 +15,31 @@ footer {
     stroke: #cfc33a;
     stroke-width: 4;
 }
+.backgroundheader{
+    height: 95vh;
+    width: 99.9;
+    background-size: 100% 100%;
+    background-image: url("/assets/background.jpg");
+    opacity: .85;
+    background-position: center;
+}
 
-/* .logan-path {
-    fill: none;
-    stroke: white;
-    stroke-width: 1;
-} */
 .logan-anderson-path {
     fill: none;
     stroke: white;
     stroke-width: 1;
 }
-/* #logan-anderson-svg {
-    height: 500px;
-    width: 1000px;
-} */
-#logan-svg-id {
-    background-color: #343a40;
-    height: 95vh;
-    width: 99.9;
 
+#logan-svg-id {
+    opacity: 1;
+    opacity: 1;
 }
-/* #logan-anderson-id {
-    height: 90vh;
-    width: 99.9;
-} */
+.content {
+    color: black;
+    background: white;
+    text-align: center;
+    font-size: 40px;
+}
 
 /* #svg-id {
     background-color: #343a40;
