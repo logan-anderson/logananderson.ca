@@ -1,4 +1,3 @@
-let the_body = document.querySelector('body');
 let logan_brand = $('.logan-title');
 
 
@@ -51,8 +50,9 @@ let logan_anderson_anime = anime({
   easing: 'easeInOutSine',
   duration: 3000,
   delay: function (el, i) {
-    return i * 250
+    return i * 175;
   },
+  endDelay: 500,
   direction: 'alternate',
   loop: true
 });
