@@ -52,7 +52,7 @@ let logan_anderson_anime = anime({
   delay: function (el, i) {
     return i * 175;
   },
-  endDelay: 500,
+  endDelay: 1000,
   direction: 'alternate',
   loop: true
 });
