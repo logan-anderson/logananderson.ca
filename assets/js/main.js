@@ -1,5 +1,5 @@
 let logan_brand = $('.logan-title');
-
+let joke_text = $('#joke')
 
 
 let scroll_test = anime({
@@ -23,7 +23,7 @@ let scroll_top = anime({
 });
 setInterval(() => {
   scroll_top.seek(window.scrollY);
-  console.log(window.scrollY)
+  // console.log(window.scrollY)
   if(window.scrollY < 990) {
     logan_brand.addClass('hidden')
   } else {
@@ -56,3 +56,43 @@ let logan_anderson_anime = anime({
   direction: 'alternate',
   loop: true
 });
+var randomJoke;
+var jokeCategory = "Programming";
+var format = "json";
+var blacklistFlags = "nsfw";
+
+
+const res = new Request(`https://sv443.net/jokeapi/category/${jokeCategory}?blacklistFlags=${blacklistFlags}&format=${format}`)
+
+let joke = fetch(res)
+  .then(response => {
+    if (response.status === 200) {
+      json_joke = response.json()
+      console.log(json_joke)
+        json_joke.then((json)=>{
+          if(json.type == "twopart"){
+            some_text = json.setup + "? \n" + json.delivery 
+            console.log("setup: " + json.setup) 
+            console.log("delivery: "+ json.delivery)
+            joke_text.text(some_text)
+          }
+          else {
+            joke_text.text(json.joke)
+            console.log("joke: "+ json.joke)
+          }
+          console.log(json)
+        }
+      )
+      return json_joke;
+    } else {
+      throw new Error('Something went wrong on api server!');
+    }
+  })
+  .then(response => {
+    console.debug(response);
+    // ...
+  }).catch(error => {
+    console.error(error);
+  });
+
+
