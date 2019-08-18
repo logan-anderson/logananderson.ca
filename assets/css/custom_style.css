@@ -22,6 +22,7 @@ footer {
     background-image: url("/assets/background.jpg");
     opacity: .85;
     background-position: center;
+    
 
 }
 
@@ -69,4 +70,8 @@ span {
     font-size: 1.5rem;
     font-family: 'Livvic', sans-serif;
     font-weight: 400;
+}
+#logan-anderson-svg {
+    width: 100%;
+    height: auto;
 }
