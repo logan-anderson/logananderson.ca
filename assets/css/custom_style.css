@@ -1,6 +1,7 @@
 body {
     /* background-color: #343a40; */
 }
+
 footer {
     background-color: #343a40;
     opacity: .85;
@@ -15,14 +16,15 @@ footer {
     stroke: #cfc33a;
     stroke-width: 4;
 }
-.backgroundheader{
+
+.backgroundheader {
     height: 95vh;
     width: 99.9;
     background-size: 100% 100%;
     background-image: url("/assets/background.jpg");
     opacity: .85;
     background-position: center;
-    
+
 
 }
 
@@ -36,6 +38,7 @@ footer {
     opacity: 1;
     opacity: 1;
 }
+
 .content {
     color: black;
     background: white;
@@ -57,10 +60,11 @@ span {
 
 .logan-titile {
     transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
     opacity: 1;
 }
+
 .hidden {
     opacity: 0;
 }
@@ -71,7 +75,17 @@ span {
     font-family: 'Livvic', sans-serif;
     font-weight: 400;
 }
+
 #logan-anderson-svg {
     width: 100%;
     height: auto;
+}
+
+ul li {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+ul {
+    list-style-type: circle;
 }

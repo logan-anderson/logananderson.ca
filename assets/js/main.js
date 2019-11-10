@@ -68,19 +68,23 @@ let joke = fetch(res)
   .then(response => {
     if (response.status === 200) {
       json_joke = response.json()
-      console.log(json_joke)
+      // console.log(json_joke)
         json_joke.then((json)=>{
-          if(json.type == "twopart"){
+          if(json.id == 47){
+
+          }
+          else if(json.type == "twopart"){
             some_text = json.setup + "? \n" + json.delivery 
-            console.log("setup: " + json.setup) 
-            console.log("delivery: "+ json.delivery)
+            
+            // console.log("setup: " + json.setup) 
+            // console.log("delivery: "+ json.delivery)
             joke_text.text(some_text)
           }
           else {
             joke_text.text(json.joke)
-            console.log("joke: "+ json.joke)
+            // console.log("joke: "+ json.joke)
           }
-          console.log(json)
+          //console.log(json)
         }
       )
       return json_joke;
