@@ -92,12 +92,15 @@ ul {
 
 .carousel-control-next-icon:after {
     content: '>';
-    font-size: 55px;
     color: black;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
-    font-size: 55px;
     color: black;
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+    color: black;
+    background-color: black;
 }
